@@ -1,8 +1,8 @@
 cd backend
-git pull origin main
+git pull origin master
 cd ..
 cd frontend
-git pull origin main
+git pull origin master
 cd ..
 git add backend frontend
 git commit -m "Updated submodule references"
