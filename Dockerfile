@@ -16,6 +16,7 @@ RUN npm install
 COPY ./backend .
 
 # Copy the frontend build to the backend public folder
+RUN mkdir -p ./public
 COPY --from=frontend-builder /frontend/dist ./public
 
 EXPOSE 5000
