@@ -1,7 +1,7 @@
 services:
   app:
     build:
-      context: .
+      context: ./backend
       dockerfile: Dockerfile
     container_name: HS-App
     ports:
@@ -12,6 +12,7 @@ services:
       - mongodb
     volumes:
       - ./backend:/app/backend
+      - ./.env:/app/backend/.env
 
   mongodb:
     image: mongo:latest
