@@ -1,6 +1,6 @@
 [submodule "backend"]
 	path = backend
-	url = https://github.com/Verttigo28/HappyServers-Backend
+	url = git@github.com:Verttigo28/HappyServers-Backend.git
 [submodule "frontend"]
 	path = frontend
-	url = https://github.com/Verttigo28/HappyServers-Front
+	url = git@github.com:Verttigo28/HappyServers-Front.git
