@@ -1,0 +1,1 @@
+docker build --progress=plain -t verttigo/hb-app . && docker compose up

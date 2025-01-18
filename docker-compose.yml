@@ -1,9 +1,6 @@
 services:
   app:
     image: verttigo/hb-app
-    build:
-      dockerfile: Dockerfile
-      context: .
     container_name: HS-App
     ports:
       - "5000:5000"
