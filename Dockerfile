@@ -1,7 +1,5 @@
 # Stage 1: Build Frontend
-FROM node:22 AS frontend-builder
-# Stage 1: Build Frontend
-FROM node:22 AS frontend-builder
+FROM node:22 AS frontend
 
 WORKDIR /frontend
 COPY ./frontend/package*.json ./
@@ -19,7 +17,7 @@ COPY ./backend .
 
 # Copy the frontend build to the backend/src/public folder
 RUN mkdir -p ./src/public
-COPY --from=frontend-builder /frontend/dist ./src/public
+COPY --from=frontend /frontend/dist ./src/public
 
 EXPOSE 5000
 
