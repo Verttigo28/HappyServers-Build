@@ -12,7 +12,7 @@ FROM node:22 AS backend
 
 WORKDIR /backend
 COPY ./backend/package*.json ./
-RUN npm install
+RUN npm install --verbose
 COPY ./backend .
 
 # Copy the frontend build to the backend/src/public folder
