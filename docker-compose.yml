@@ -17,6 +17,8 @@ services:
     container_name: HS-DB
     ports:
       - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: "test"
+      MONGO_INITDB_ROOT_PASSWORD: "NETksjke25852"
     volumes:
       - ./mongodb:/data/db
-
